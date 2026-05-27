@@ -1,0 +1,22 @@
+public class Conta {
+    protected String titular;
+    protected double saldo;
+    
+    public Conta(String t) {
+        this.titular = t;
+        this.saldo = 0;
+        
+    }
+
+    public void depositar(double valor) {
+        this.saldo = this.saldo + valor;
+        System.out.println("Deposito concluido!");
+
+    }
+
+    public double getSaldo() {
+        return this.saldo;
+    }
+        
+    }
+
